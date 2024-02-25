@@ -8,22 +8,22 @@ function Hero() {
         className="relative heroElem w-full pt-20 pb-40 m-auto flex justify-center text-center flex-col items-center z-1"
         style={{ maxWidth: "1200px" }}
       >
-        <p className="text-xl mb-5">Hi! I'm Syn Kit.</p>
+        <p className="text-xl mb-5">Hi! I'm Syn Kit!</p>
         <h1 className="heroTitle inline-block max-w-2xl lg:max-w-4xl  w-auto relative text-5xl md:text-6xl lg:text-7xl tracking-tighter mb-10 font-bold heroShinyBg">
-          I am a <span className="heroShiny1 text-fun-pink-light">cybersecurity student</span> and{" "}
-          <span className="heroShiny2 text-fun-pink-light">aspiring (something)</span> 
+          I am a <span className="heroShiny1 text-fun-pink-light">cybersecurity student</span> with interest in{" "}
+          <span className="heroShiny2 text-fun-pink-light">offensive security and technology</span> 
           <img
-            className="sqD w-1/3 sm:block sm:top-[-20px] sm:left-[-10%] lg:top-[-100px] lg:left-[-10%] opacity-90"
+            className="sqD w-1/3 sm:block sm:top-[-20px] sm:left-[-15%] lg:top-[-100px] lg:left-[-10%] opacity-90"
             style={{ animationDelay: "0.1s" }}
             src="/static/doodles/hero/pink_pac.svg"
           />
           <img
-            className="sqD bottom-[-300px] left-[25%] sm:left-[30%] lg:bottom-[-280px] lg:left-[20%] w-[350px] opacity-80"
+            className="sqD bottom-[-200px] left-[-10%] sm:left-[30%] lg:bottom-[-200px] lg:left-[-10%] w-[350px] opacity-80"
             style={{ animationDelay: "0.6s" }}
             src="/static/doodles/hero/red_pac.svg"
           />
           <img
-            className="sqD bottom-[-270px] left-[50%] sm:left-[55%] opacity-90"
+            className="sqD bottom-[-250px] left-[50%] sm:left-[55%] opacity-90"
             style={{ animationDelay: "0.6s" }}
             src="/static/doodles/hero/blue_pac.svg"
           />

@@ -14,8 +14,9 @@ function Experiences() {
         />
       </div>
       <VerticalTimeline>
-        {experiences.map((experience) => (
+        {experiences.map((experience, index) => (
           <VerticalTimelineElement
+            key={index}
             className={experience.className}
             contentStyle={experience.contentStyle}
             contentArrowStyle={experience.contentArrowStyle}

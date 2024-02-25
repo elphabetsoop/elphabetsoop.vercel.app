@@ -18,7 +18,6 @@ const Page = ({ currentPage, meta: { title, desc }, children }: PageProps): Reac
       ? "Syn Kit"
       : `${currentPage} - elphabetsoop.github.io`
   }`;
-  console.log(currentPage);
   return (
     <div
       className="w-full m-auto flex flex-col items-center justify-center min-h-screen opening-box-animate-paddin text-white overflow-hidden md:overflow-visible"
