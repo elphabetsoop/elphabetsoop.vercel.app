@@ -1,9 +1,18 @@
 import Head from "next/head";
 import MobileNavbar from "../global/MobileNavbar";
 import Navbar from "../global/Navbar";
-import React, { ReactChildren } from "react";
+import React, { ReactNode, ReactElement } from "react";
 
-function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
+type PageProps = {
+  currentPage: string;
+  meta: {
+    title?: string;
+    desc: string;
+  };
+  children?: ReactNode;
+};
+
+const Page = ({ currentPage, meta: { title, desc }, children }: PageProps): ReactElement => {
   const pageTitle = `${
     currentPage === "Home"
       ? "Syn Kit"
@@ -24,7 +33,6 @@ function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
           href="/logos/logo_full.svg"
         />
       </Head>
-      
 
       <main className="p-5 w-full flex-1 text-center">
         <div className="hidden sm:block z-100">
@@ -40,12 +48,3 @@ function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
 }
 
 export default Page;
-
-type PageProps = {
-  currentPage: string;
-  meta: {
-    title?: string;
-    desc: string;
-  };
-  children?: JSX.Element | JSX.Element[];
-};

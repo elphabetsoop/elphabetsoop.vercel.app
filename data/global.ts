@@ -2,17 +2,6 @@ type Route = {
   title: string,
   path: string
 }
-
-type FooterCol = {
-  title: string,
-  links: {
-    name: string,
-    link: string,
-    icon?: string,
-    leavesWebsite: boolean
-  }[]
-}
-
 export const routes: Route[] = [
   {
     title: "experience",
@@ -27,5 +16,3 @@ export const routes: Route[] = [
     path: "/#contact",
   },
 ];
-
-

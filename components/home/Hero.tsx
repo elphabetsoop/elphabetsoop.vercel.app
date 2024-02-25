@@ -10,8 +10,8 @@ function Hero() {
       >
         <p className="text-xl mb-5">Hi! I'm Syn Kit.</p>
         <h1 className="heroTitle inline-block max-w-2xl lg:max-w-4xl  w-auto relative text-5xl md:text-6xl lg:text-7xl tracking-tighter mb-10 font-bold heroShinyBg">
-          I am a <span className="heroShiny1 text-fun-pink">cybersecurity student</span> and{" "}
-          <span className="heroShiny2 text-fun-pink">aspiring (something)</span> 
+          I am a <span className="heroShiny1 text-fun-pink-light">cybersecurity student</span> and{" "}
+          <span className="heroShiny2 text-fun-pink-light">aspiring (something)</span> 
           <img
             className="sqD w-1/3 sm:block sm:top-[-20px] sm:left-[-10%] lg:top-[-100px] lg:left-[-10%] opacity-90"
             style={{ animationDelay: "0.1s" }}
@@ -35,7 +35,7 @@ function Hero() {
         </h1>
         <ScrollLink
           activeClass="active"
-          to="experiences"
+          to="experience"
           spy={true}
           offset={-30}
           smooth={true}

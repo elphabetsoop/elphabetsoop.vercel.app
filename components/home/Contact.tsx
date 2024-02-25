@@ -46,6 +46,9 @@ function Contact() {
                     </a>
                 </li>
             </ul>
+            <div className="mt-20">
+                © 2024 
+            </div>
         </Row>
     );
 }
