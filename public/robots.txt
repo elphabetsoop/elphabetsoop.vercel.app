@@ -1,0 +1,4 @@
+# hi there are you looking for a flag
+
+User-agent: *
+Disallow: /
