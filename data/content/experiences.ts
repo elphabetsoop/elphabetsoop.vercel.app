@@ -1,5 +1,14 @@
 import { kebabCase } from "@/utils/utils";
-import { Experience } from "types";
+
+type Experience = {
+  date: string,
+  icon: string,
+  title: string,
+  subtitle: string[],
+  description: object,
+  contentStyle: object,
+  tags: string[]
+};
 
 const experiences: Experience[] = [
   {
