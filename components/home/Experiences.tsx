@@ -7,7 +7,7 @@ function Experiences() {
   return (
     <div className="flex flex-col text-left justify-between pt-8 relative">
       <div id="experience">
-        <SectionTitle title="experiences " />
+        <SectionTitle title="experience " />
         <img
           className="sqD top-[-15px] right-[-15px]"
           src="/static/doodles/skills/fillStar.svg"
