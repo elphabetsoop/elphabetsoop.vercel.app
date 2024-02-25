@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import SectionTitle from "../global/SectionTitle";
-import projects from "@/data/content/projects";
 // import ProjectCard from "../projects/ProjectCard";
 
 
@@ -11,9 +10,9 @@ function Projects() {
       <div id="projects">
         <SectionTitle title="projects " />
         <img
-        className="sqD top-[-15px] right-[-15px]"
-        src="/static/doodles/skills/fillStar.svg"
-      />
+          className="sqD top-[-45px] right-[-300px] w-1/2 h-1/2"
+          src="/static/doodles/projects/coding.svg"
+        />
       </div>
       <div className="grid grid-cols-1 gap-12 md:gap-5 md:grid-cols-3 items-start">
         <figure>

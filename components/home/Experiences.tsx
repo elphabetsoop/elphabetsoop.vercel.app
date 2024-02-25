@@ -10,7 +10,7 @@ function Experiences() {
         <SectionTitle title="experience " />
         <img
           className="sqD top-[-15px] right-[-15px]"
-          src="/static/doodles/skills/fillStar.svg"
+          src="/static/doodles/projects/fillStar.svg"
         />
       </div>
       <VerticalTimeline>

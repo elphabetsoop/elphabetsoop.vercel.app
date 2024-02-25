@@ -11,7 +11,7 @@ function Contact() {
     return (
         <Row md={12} className="home-about-social" style={{ marginBottom: '30px' }}>
             <SectionTitle title="contact " />
-            <ul id="contact" className="home-about-social-links" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+            <ul id="contact" className="home-about-social-links" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
                 <li className="social-icons" style={{ margin: '0 10px' }}>
                     <a
                         href="https://github.com/elphabetsoop"
@@ -45,9 +45,13 @@ function Contact() {
                         <AiFillMail />
                     </a>
                 </li>
+                    <img
+                        className="sqD lg:bottom-[-100px] lg:right-[-50px] w-1/6"
+                        src="/static/doodles/contact/smiley.svg"
+                    />
             </ul>
             <div className="mt-20">
-                © 2024 
+                © 2024
             </div>
         </Row>
     );
