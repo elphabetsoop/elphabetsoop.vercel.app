@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { routes } from "@/data/global";
+import { Link as ScrollLink } from "react-scroll";
 
 function Navbar({ currentPage }) {
   return (
@@ -26,7 +27,18 @@ function Navbar({ currentPage }) {
                 : "opacity-40 hover:opacity-100 transition-opacity"
                 }`}
             >
-              <Link href={item.path}>{item.title}</Link>
+              <ScrollLink
+                activeClass="active"
+                to={item.path.replace('/#', '')}
+                spy={true}
+                offset={-30}
+                smooth={true}
+                duration={500}
+                href={item.path}
+              >
+                {item.title}
+                
+              </ScrollLink>
             </li>
           );
         })}
@@ -36,3 +48,4 @@ function Navbar({ currentPage }) {
 }
 
 export default Navbar;
+
