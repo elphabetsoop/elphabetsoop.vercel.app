@@ -2,6 +2,7 @@ import { kebabCase } from "@/utils/utils";
 
 type Experience = {
   date: string,
+  className: string,
   icon: string,
   title: string,
   subtitle: string[],
@@ -13,6 +14,7 @@ type Experience = {
 const experiences: Experience[] = [
   {
     date: "2023 - Present",
+    className: "vertical-timeline-element--school",
     icon: "/static/timeline/np.png",
     title: "Ngee Ann Polytechnic",
     subtitle: ["Cybersecurity & Digital Forensics Student", "CSIT Diploma Scholar"],
@@ -24,6 +26,7 @@ const experiences: Experience[] = [
   },
   {
     date: "2019-2022",
+    className: "vertical-timeline-element--school",
     icon: "/static/timeline/fhss.png",
     title: "Fuhua Secondary School",
     subtitle: ["Student"],
