@@ -19,9 +19,8 @@ function Experiences() {
             key={index}
             className={experience.className}
             contentStyle={experience.contentStyle}
-            contentArrowStyle={experience.contentArrowStyle}
             date={experience.date}
-            iconStyle={{ ...experience.iconStyle, background: 'white' }}
+            iconStyle={{ background: 'white' }}
             icon={
               <img
                 src={experience.icon}
