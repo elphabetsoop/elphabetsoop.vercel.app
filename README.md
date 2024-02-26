@@ -1,4 +1,4 @@
-# elphabetsoop.github.io
+# elphabetsoop.vercel.app
 
 ## tech
 - React
@@ -14,7 +14,7 @@ to start
 yarn
 yarn run dev
 ```
-## credits
+## inspiration/credits
 - [vertical timeline component](https://github.com/stephane-monnot/react-vertical-timeline)
 - [BraydenTW](https://braydentw.io/)
 - [anuraghazra](https://anuraghazra.dev/)
