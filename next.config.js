@@ -1,5 +1,6 @@
 module.exports = {
     swcMinify: true,
+    output: 'export',
     async redirects() {
         return [
           {
