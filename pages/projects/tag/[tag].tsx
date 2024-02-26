@@ -1,67 +1,68 @@
-import Page from "components/utility/Page";
+// ### to implement: tags for projects
 
-import { GetStaticProps, GetStaticPaths } from "next";
-import { allKebabTags, allTags } from "@/data/content/projects";
+// import Page from "components/utility/Page";
 
-import experiences from "@/data/content/experiences";
+// import { GetStaticProps, GetStaticPaths } from "next";
+// import { allKebabTags, allTags } from "@/data/content/projects";
 
-import { kebabCase, kebabArray } from "@/utils/utils";
-import Link from "next/link";
-import Experiences from "@/components/home/Experiences";
 
-export const getStaticPaths: GetStaticPaths = async () => {
-  const allTags = [];
-  experiences.forEach((project) =>
-    experiences.tags.forEach((tag) => {
-      allTags.push(tag);
-    })
-  );
-  const uniqueAllTags = [...new Set(allTags)];
-  const allTagsPaths = uniqueAllTags.map((path) => ({
-    params: { tag: `${kebabCase(path)}` },
-  }));
-  return {
-    paths: allTagsPaths,
-    fallback: false,
-  };
-};
+// import { kebabCase, kebabArray } from "@/utils/utils";
+// import Link from "next/link";
+// import Projects from "@/components/home/Projects";
 
-export const getStaticProps: GetStaticProps = async ({params}: {params: {tag: string}}) => {
-  const tag = params.tag;
-  const filteredExperiences = experiences.filter((experience) =>
-    [...kebabArray(experience.tags)].includes(tag)
-  );
-  return {
-    props: JSON.parse(
-      JSON.stringify({
-        filteredExperiences,
-        tag: tag,
-      })
-    ),
-  };
-};
+// export const getStaticPaths: GetStaticPaths = async () => {
+//   const allTags = [];
+//   experiences.forEach((project) =>
+//     experiences.tags.forEach((tag) => {
+//       allTags.push(tag);
+//     })
+//   );
+//   const uniqueAllTags = [...new Set(allTags)];
+//   const allTagsPaths = uniqueAllTags.map((path) => ({
+//     params: { tag: `${kebabCase(path)}` },
+//   }));
+//   return {
+//     paths: allTagsPaths,
+//     fallback: false,
+//   };
+// };
 
-function PostPage({ filteredExperiences, tag }) {
-  const capsTag = allTags[allKebabTags.indexOf(tag)];
-  return (
-    <Page
-      currentPage="Experiences"
-      meta={{
-        title: `${capsTag} Experiences`,
-        desc: `A showcase for all of my ${capsTag} projects.`,
-      }}
-    >
-      <Heading tag={capsTag} />
-      <Experiences overwriteExperiences={filteredExperiences} />
+// export const getStaticProps: GetStaticProps = async ({params}: {params: {tag: string}}) => {
+//   const tag = params.tag;
+//   const filteredProjects = projects.filter((project) =>
+//     [...kebabArray(project.tags)].includes(tag)
+//   );
+//   return {
+//     props: JSON.parse(
+//       JSON.stringify({
+//         filteredProjects,
+//         tag: tag,
+//       })
+//     ),
+//   };
+// };
 
-      <Link href="/experiences">
-        <div className="mt-8 max-w-sm md:max-w-2xl border border-fun-pink mx-auto text-center w-full whitespace-nowrap px-8 py-3 rounded-full text-fun-pink bg-fun-pink-darkerer hover:bg-fun-pink hover:text-white transition-colors cursor-pointer">
-          View All
-        </div>
-      </Link>
-      {/* <More /> */}
-    </Page>
-  );
-}
+// function PostPage({ filteredProjects, tag }) {
+//   const capsTag = allTags[allKebabTags.indexOf(tag)];
+//   return (
+//     <Page
+//       currentPage="Projects"
+//       meta={{
+//         title: `${capsTag} Projects`,
+//         desc: `A showcase for all of my ${capsTag} projects.`,
+//       }}
+//     >
+//       <Heading tag={capsTag} />
+//       <Projects overwriteProjects={filteredProjects} />
 
-export default PostPage;
+//       <Link href="/projects">
+//         <div className="mt-8 max-w-sm md:max-w-2xl border border-fun-pink mx-auto text-center w-full whitespace-nowrap px-8 py-3 rounded-full text-fun-pink bg-fun-pink-darkerer hover:bg-fun-pink hover:text-white transition-colors cursor-pointer">
+//           View All
+//         </div>
+//       </Link>
+//       {/* <More /> */}
+//     </Page>
+//   );
+// }
+
+// export default PostPage;
