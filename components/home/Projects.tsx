@@ -22,8 +22,8 @@ function Projects() {
           <figcaption style={{ margin: '10px' }}>(Multiplayer) Pacman made with Python's Pygame library for ICT's Open House 2024 with my group</figcaption>
         </figure>
         <figure>
-          <a href="https://github.com/elphabetsoop/elphabetsoop.github.io">
-            <img src="https://readme-stats-elphabetsoops-projects.vercel.app/api/pin/?username=elphabetsoop&repo=elphabetsoop.github.io&show_owner=true" alt="Pacman" />
+          <a href="https://github.com/elphabetsoop/elphabetsoop.vercel.app">
+            <img src="https://readme-stats-elphabetsoops-projects.vercel.app/api/pin/?username=elphabetsoop&repo=elphabetsoop.github.io&show_owner=true" alt="Portfolio website" />
           </a>
           <figcaption style={{ margin: '10px' }}>Portfolio Website (this.)</figcaption>
         </figure>
