@@ -16,7 +16,7 @@ const Page = ({ currentPage, meta: { title, desc }, children }: PageProps): Reac
   const pageTitle = `${
     currentPage === "Home"
       ? "Tan Syn Kit"
-      : `${currentPage} - elphabetsoop.github.io`
+      : `${currentPage} - elphabetsoop.vercel.app`
   }`;
   return (
     <div
