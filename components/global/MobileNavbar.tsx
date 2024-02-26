@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState} from "react";
 
 import Link from "next/link";
-import {routes} from "@/data/global";
+import { routes } from "@/data/global";
 import useDelayedRender from "use-delayed-render";
 
 export default function MobileNavbar() {
@@ -37,13 +37,11 @@ export default function MobileNavbar() {
         style={{ zIndex: 101 }}
       >
         <li className="list-none font-bold text-lg">
-          <Link href="/">
-            <img
-              className="mr-3"
-              src="/static/logos/logo_full.svg"
-              width="160"
-            />
-          </Link>
+          <img
+            className="mr-3"
+            src="/static/logos/logo_full.svg"
+            width="160"
+          />
         </li>
         <button
           className="burger visible md:hidden"
@@ -78,7 +76,7 @@ export default function MobileNavbar() {
   );
 }
 
-function MenuIcon(props) {
+function MenuIcon(props){
   return (
     <svg
       className="h-5 w-5 absolute text-gray-100"
@@ -106,7 +104,7 @@ function MenuIcon(props) {
   );
 }
 
-function CrossIcon(props) {
+function CrossIcon(props){
   return (
     <svg
       className="h-5 w-5 absolute text-gray-100"

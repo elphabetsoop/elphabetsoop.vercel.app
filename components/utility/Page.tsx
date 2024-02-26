@@ -15,7 +15,7 @@ type PageProps = {
 const Page = ({ currentPage, meta: { title, desc }, children }: PageProps): ReactElement => {
   const pageTitle = `${
     currentPage === "Home"
-      ? "Syn Kit"
+      ? "Tan Syn Kit"
       : `${currentPage} - elphabetsoop.github.io`
   }`;
   return (
