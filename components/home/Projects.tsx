@@ -10,7 +10,7 @@ function Projects() {
       <div id="projects">
         <SectionTitle title="projects " />
         <img
-          className="sqD top-[-45px] right-[-300px] w-1/2 h-1/2"
+          className="sqD top-[-75px] right-[-100px] sm:top-[-45px] sm:right-[-300px] w-1/2 h-1/2"
           src="/static/doodles/projects/coding.svg"
         />
       </div>

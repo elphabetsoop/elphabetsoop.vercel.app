@@ -13,7 +13,7 @@ function Hero() {
           I am a <span className="heroShiny1 text-fun-pink-light">cybersecurity student</span> with interest in{" "}
           <span className="heroShiny2 text-fun-pink-light">offensive security and technology</span> 
           <img
-            className="sqD w-1/3 sm:block sm:top-[-20px] sm:left-[-15%] lg:top-[-100px] lg:left-[-10%] opacity-90"
+            className="sqD w-1/3 sm:block top-[-20px] sm:left-[-20%] opacity-90"
             style={{ animationDelay: "0.1s" }}
             src="/static/doodles/hero/pink_pac.svg"
           />
@@ -23,12 +23,12 @@ function Hero() {
             src="/static/doodles/hero/red_pac.svg"
           />
           <img
-            className="sqD bottom-[-250px] left-[50%] sm:left-[55%] opacity-90"
+            className="sqD bottom-[-250px] left-[50%] opacity-90"
             style={{ animationDelay: "0.6s" }}
             src="/static/doodles/hero/blue_pac.svg"
           />
           <img
-            className="sqD w-1/3 sm:block sm:top-[-130px] sm:left-[75%] lg:top-[-130px] lg:left-[80%]"
+            className="sqD w-1/3 top-[-130px] left-[75%]"
             style={{ animationDelay: "0.6s" }}
             src="/static/doodles/hero/yellow_pac.svg"
           />

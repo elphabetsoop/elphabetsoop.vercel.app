@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import SectionTitle from "../global/SectionTitle";
 import {
     AiFillGithub,
@@ -46,7 +46,7 @@ function Contact() {
                     </a>
                 </li>
                     <img
-                        className="sqD lg:bottom-[-100px] lg:right-[-50px] w-1/6"
+                        className="sqD bottom-[-100px] right-[10px] w-2/6 lg:right-[-50px] lg:w-1/6"
                         src="/static/doodles/contact/smiley.svg"
                     />
             </ul>
