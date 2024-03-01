@@ -11,7 +11,7 @@ function Skills() {
         src="/static/doodles/skills/laptop.svg"
       />
       <img
-        className="sqD top-[-80px] right-[-50px] lg:top-[30px] lg:right-[-200px] z-[-10] w-1/2 h-1/2"
+        className="sqD top-[-80px] right-[-50px] lg:top-[30px] lg:right-[-200px] z-[-10] w-3/5 h-3/5"
         src="/static/doodles/skills/hash.svg"
       />
       <div className="mt-10 relative max-w-lg w-full mx-auto md:mx-none grid gap-x-8 gap-y-12 sm:gap-8 md:gap-12 grid-cols-3 sm:grid-cols-6 items-center place-content-center">
